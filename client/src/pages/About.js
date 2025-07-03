@@ -1,4 +1,5 @@
 import "./About.css";
+import { FaDownload } from "react-icons/fa";
 
 function About() {
   return (
@@ -14,9 +15,16 @@ function About() {
           From frontend styling to backend logic, I love crafting projects that
           make people’s lives easier and more inspiring.
         </p>
-        <button className="download-btn">Download CV</button>
+
+        <a
+          href="/nainalakhe.cv.pdf"
+          download="Naina_Lakhe_CV.pdf"
+          className="about-button"
+        >
+          <FaDownload style={{ marginRight: "0.5rem" }} />
+          Download CV
+        </a>
       </div>
-      
     </section>
   );
 }
