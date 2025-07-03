@@ -1,6 +1,4 @@
 import "./Home.css";
-
-
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Home() {
@@ -18,13 +16,24 @@ function Home() {
             See My Work
           </a>
           <div className="social-icons">
-            <a href="https://github.com/lakhenaina" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/lakhenaina"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaGithub size={28} />
             </a>
-            <a href="https://www.linkedin.com/in/naina-lakhe-9272a3354/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/naina-lakhe-9272a3354/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaLinkedin size={28} />
             </a>
           </div>
+        </div>
+        <div className="hero-image">
+          <img src="/developer.jpg" alt="Developer at laptop" />
         </div>
       </section>
     </div>

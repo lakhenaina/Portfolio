@@ -1,40 +1,57 @@
 .navbar {
-  background-color: #f8f0ff;
   display: flex;
-  justify-content: space-between; /* pushes left logo, right links */
+  justify-content: space-between;
   align-items: center;
+  background-color: #f5edff;
   padding: 1rem 2rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.logo {
+.navbar .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #b561f2;
-  font-family: 'Georgia', serif;
-  letter-spacing: 1px;
+  color: #7b3ff2;
+  text-decoration: none;
 }
 
-.nav-links {
+.navbar ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
-  margin-left: auto; /* push links to the right */
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
 }
 
-.nav-links a {
+.navbar ul li a {
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  transition: color 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #b561f2;
+.navbar ul li a:hover {
+  background-color: #7b3ff2;
+  color: #fff;
 }
-.logo {
-  text-decoration: none;
-  color: #6c63ff; /* or whatever color you like */
-  font-weight: bold;
-  font-size: 1.4rem;
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .navbar ul li a {
+    width: 100%;
+  }
 }
